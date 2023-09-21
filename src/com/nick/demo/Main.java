@@ -16,5 +16,10 @@ public class Main {
         for (int i = 1; i < loops + 1; i++) {
             System.out.println("Varv " + i);
         }
+        do {
+            System.out.println("Skriv något: ");
+            String input = sc.nextLine();
+            System.out.println("Du skrev:" + input);
+        } while (true);
     }
 }
