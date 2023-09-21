@@ -16,10 +16,17 @@ public class Main {
         for (int i = 1; i < loops + 1; i++) {
             System.out.println("Varv " + i);
         }
+        boolean isPlaying = true;
         do {
             System.out.println("Skriv något: ");
             String input = sc.nextLine();
-            System.out.println("Du skrev:" + input);
-        } while (true);
+            System.out.println("Du skrev: " + input);
+            
+            if (input.equals("stop")){
+                isPlaying = false;
+            } else {
+                System.out.println("Hint: pots");
+            }
+        } while (isPlaying);
     }
 }
